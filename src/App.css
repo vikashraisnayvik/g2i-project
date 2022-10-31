@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700&display=swap');
+*{
+ box-sizing: border-box;
+}
+:root{
+  --primary-color:#0c6ed4;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Code Pro', monospace;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+a:hover{
+  color: #000;
+}
+ul{
+  margin-left: 0;
+  padding-left: 0;
+}
+.container{
+max-width: 1300px;
+  width: 100%;
+}
+.navbar__main{
+  padding: 20px 0 20px 0;
+  margin: auto;
+}
+.navbar_inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_link{
+  display: flex;
+  gap: 2.1rem;
+  align-items: center;
+}
+.link{
+  display: flex;
+  gap: 1.9rem;
+}
