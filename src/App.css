@@ -1,49 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700&display=swap');
-*{
- box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700&family=Lexend+Deca:wght@200;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
-:root{
-  --primary-color:#0c6ed4;
+
+:root {
+  --primary-color: #0c6ed4;
 }
-body{
+
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Inter Tight', sans-serif;
 }
-li{
+
+li {
   list-style: none;
 }
-a{
+
+a {
   text-decoration: none;
   color: var(--primary-color);
   font-size: 1rem;
 }
-a:hover{
+
+a:hover {
   color: #000;
 }
-ul{
+
+ul {
   margin-left: 0;
   padding-left: 0;
+  font-family: 'Source Code Pro', monospace;
 }
-.container{
-max-width: 1300px;
+
+.heading {
+  font-size: 40px;
+}
+
+.container {
+  max-width: 1300px;
   width: 100%;
 }
-.navbar__main{
+
+.navbar__main {
   padding: 20px 0 20px 0;
   margin: auto;
 }
-.navbar_inner{
+
+.navbar_inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navbar_link{
+
+.navbar_link {
   display: flex;
   gap: 2.1rem;
   align-items: center;
 }
-.link{
+
+.link {
   display: flex;
   gap: 1.9rem;
+}
+
+.main_title {
+  font-weight: bold;
+  line-height: 48px;
+  letter-spacing: 0em;
 }

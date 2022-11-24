@@ -20,7 +20,8 @@
   padding-top: 1rem;
 }
 
-.dropdown-content a {
+.dropdown-content a,
+.dropdown-content link {
   float: none;
   margin-bottom: .8rem;
   text-decoration: none;
@@ -28,6 +29,31 @@
   text-align: left;
 }
 
+.downArrow {
+  display: none;
+}
+
+.dropdown:hover .upArrow {
+  display: none;
+}
+
+.dropdown:hover .downArrow {
+  display: inline-block;
+  color: #0c6ed4;
+}
+
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.dropbtn svg {
+  margin-left: 20px;
+  margin-top: 3px;
+}
+
+.hire_developer {
+  background: #0c6ed4;
+  color: #fff;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
 }
