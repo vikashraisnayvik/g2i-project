@@ -20,7 +20,7 @@ li {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: var(--primary-color);
   font-size: 1rem;
 }
@@ -37,6 +37,13 @@ ul {
 
 .heading {
   font-size: 40px;
+}
+
+.banner-pera {
+  font-size: 18px;
+  color: #4b5a82;
+  line-height: 20px;
+  text-align: left;
 }
 
 .container {
@@ -70,4 +77,21 @@ ul {
   font-weight: bold;
   line-height: 48px;
   letter-spacing: 0em;
+}
+
+.banner_inner {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.banner_btn {
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 8px 45px 45px 8px;
+  border: none;
+  width: 150px;
+  text-transform: uppercase;
+  font-family: 'Source Code Pro', monospace;
 }
