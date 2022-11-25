@@ -1,49 +1,157 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600;700&display=swap');
-*{
- box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;600;700&family=Lexend+Deca:wght@200;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
-:root{
-  --primary-color:#0c6ed4;
+
+:root {
+  --primary-color: #0c6ed4;
 }
-body{
+
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Inter Tight', sans-serif;
+  overflow-x: hidden;
 }
-li{
+
+li {
   list-style: none;
 }
-a{
-  text-decoration: none;
+
+a {
+  text-decoration: none !important;
   color: var(--primary-color);
   font-size: 1rem;
 }
-a:hover{
+
+a:hover {
   color: #000;
 }
-ul{
+
+ul {
   margin-left: 0;
   padding-left: 0;
+  font-family: 'Source Code Pro', monospace;
 }
-.container{
-max-width: 1300px;
+
+.bg-gray {
+  background-color: #fafafa;
+}
+
+.heading {
+  font-size: 40px;
+}
+
+.banner-pera {
+  font-size: 18px;
+  color: #4b5a82;
+  line-height: 20px;
+  text-align: left;
+}
+
+.container {
+  max-width: 1300px;
   width: 100%;
 }
-.navbar__main{
+
+.navbar__main {
   padding: 20px 0 20px 0;
   margin: auto;
 }
-.navbar_inner{
+
+.navbar_inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navbar_link{
+
+.navbar_link {
   display: flex;
   gap: 2.1rem;
   align-items: center;
 }
-.link{
+
+.link {
   display: flex;
   gap: 1.9rem;
+}
+
+.main_title {
+  font-weight: bold;
+  line-height: 48px;
+  letter-spacing: 0em;
+}
+
+.banner_inner {
+  padding-top: 65px;
+  position: relative;
+}
+
+.banner_right {
+  position: relative;
+}
+
+.banner-section::before {
+  content: '';
+  height: 599px;
+  width: 602px;
+  position: absolute;
+  background: url('./assets/circel.svg');
+  background-repeat: no-repeat;
+  right: -28px;
+  top: 130px;
+  background-size: 100%;
+}
+
+.banner_btn {
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 16px;
+  padding: 16px;
+  border-radius: 8px 45px 45px 8px;
+  border: none;
+  width: 150px;
+  text-transform: uppercase;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.img-title {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.exprince {
+  background-color: #eef7fb;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.exprince>span:first-child {
+  border-right: 1px solid #000;
+  width: 30%;
+}
+
+.exprinces span::first-letter {
+  font-weight: bold;
+}
+
+.caption {
+  margin-top: 35px;
+}
+
+.sponser {
+  padding: 70px 32px 50px 32px;
+}
+
+.wf_img {
+  width: 530px;
+}
+
+.wf_img img {
+  width: 100%;
 }
